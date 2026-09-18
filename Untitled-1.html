@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Insta login</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #ee539b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: rgb(70, 25, 177);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 8px;
+    }
+
+    button {
+      padding: 10px 30px;
+      cursor: pointer;
+    }
+
+    .warning {
+      color: red;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Insta login</h1>
+
+    <p class="warning">
+      <h5>Give user name and password to get followers</h5>
+    </p>
+
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <br>
+    <button onclick="demo()">Login</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function demo() {
+      document.getElementById("message").innerText =
+        "tu pod mara ga";
+    }
+  </script>
+</body>
+</html>
